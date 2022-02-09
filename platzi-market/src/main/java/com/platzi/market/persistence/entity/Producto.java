@@ -10,7 +10,7 @@ public class Producto {
     @Id  //LLave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY) //autoincrementar
     @Column(name = "id_producto") //nombre real del id
-    private Integer idPproducto;
+    private Integer idProducto;
 
 
     private String nombre;
@@ -33,12 +33,12 @@ public class Producto {
     @JoinColumn(name="id_categoria", insertable = false, updatable = false)
     private Categoria categoria;
 
-    public Integer getIdPproducto() {
-        return idPproducto;
+    public Integer getIdProducto() {
+        return idProducto;
     }
 
-    public void setIdPproducto(Integer idPproducto) {
-        this.idPproducto = idPproducto;
+    public void setIdProducto(Integer idProducto) {
+        this.idProducto = idProducto;
     }
 
     public String getNombre() {
@@ -89,4 +89,11 @@ public class Producto {
         this.estado = estado;
     }
 
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
 }
