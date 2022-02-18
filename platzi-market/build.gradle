@@ -19,6 +19,8 @@ dependencies {
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.4'
 	implementation 'org.springdoc:springdoc-openapi-data-rest:1.6.4'
 
+	implementation 'org.springframework.boot:spring-boot-starter-security:2.6.3'
+
 
 	runtimeOnly 'org.postgresql:postgresql'
 
