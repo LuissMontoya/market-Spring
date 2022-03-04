@@ -29,6 +29,7 @@ public class AuthController {
     @Autowired
     private JWTUtil jwtUtil;
 
+
     @PostMapping("/authenticate")
     public ResponseEntity<AuthenticationResponse> createToken(@RequestBody AuthenticationRequest request){
         try{
@@ -41,8 +42,6 @@ public class AuthController {
         catch (BadCredentialsException e){
             return new ResponseEntity<>(HttpStatus.FORBIDDEN);
         }
-
-
     }
 
 
